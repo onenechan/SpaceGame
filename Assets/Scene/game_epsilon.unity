@@ -113,41 +113,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1300724540
+--- !u!1 &389449066
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1300724543}
-  - component: {fileID: 1300724542}
-  - component: {fileID: 1300724541}
+  - component: {fileID: 389449068}
+  - component: {fileID: 389449067}
   m_Layer: 0
-  m_Name: H2B_dot
+  m_Name: epsilon_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1300724541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1300724540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 995cc54b13baa4e2b9dd0e89cae2033c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
---- !u!212 &1300724542
+--- !u!212 &389449067
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1300724540}
+  m_GameObject: {fileID: 389449066}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -176,7 +163,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 03e64fd3315454bb2983399772db60ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1dd22d2e6cf2a48248c5af06c27c5d5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -186,30 +173,30 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!4 &1300724543
+--- !u!4 &389449068
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1300724540}
+  m_GameObject: {fileID: 389449066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.68200964, y: 0.6820097, z: 0.6820097}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1626886210
+--- !u!1 &1255033053
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1626886214}
-  - component: {fileID: 1626886213}
-  - component: {fileID: 1626886212}
-  - component: {fileID: 1626886211}
+  - component: {fileID: 1255033057}
+  - component: {fileID: 1255033056}
+  - component: {fileID: 1255033055}
+  - component: {fileID: 1255033054}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -217,26 +204,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1626886211
+--- !u!81 &1255033054
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1626886210}
+  m_GameObject: {fileID: 1255033053}
   m_Enabled: 1
---- !u!124 &1626886212
+--- !u!124 &1255033055
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1626886210}
+  m_GameObject: {fileID: 1255033053}
   m_Enabled: 1
---- !u!20 &1626886213
+--- !u!20 &1255033056
 Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1626886210}
+  m_GameObject: {fileID: 1255033053}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -267,12 +254,12 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &1626886214
+--- !u!4 &1255033057
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1626886210}
+  m_GameObject: {fileID: 1255033053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
