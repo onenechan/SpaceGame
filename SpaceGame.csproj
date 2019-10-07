@@ -259,6 +259,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\enemyGenerate.cs" />
+    <Compile Include="Assets\Script\enemyScript.cs" />
     <Compile Include="Assets\Script\move_rocket.cs" />
     <Compile Include="Assets\Script\move_Scene.cs" />
   </ItemGroup>
