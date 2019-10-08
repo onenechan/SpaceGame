@@ -1,18 +1,21 @@
 ﻿<Properties StartupConfiguration="{51A31724-13B1-5E8C-04A4-A6A8058BF904}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/enemyScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/PlayerScript.cs">
     <Files>
       <File FileName="Assets/Script/move_rocket.cs" Line="20" Column="48" />
-      <File FileName="Assets/Script/move_Scene.cs" Line="19" Column="6" />
-      <File FileName="Assets/Script/enemyGenerate.cs" Line="23" Column="6" />
-      <File FileName="Assets/Script/enemyScript.cs" Line="14" Column="22" />
+      <File FileName="Assets/Script/move_Scene.cs" />
+      <File FileName="Assets/Script/enemyGenerate.cs" />
+      <File FileName="Assets/Script/enemyScript.cs" Line="15" Column="18" />
+      <File FileName="Assets/Script/PlayerScript.cs" Line="5" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SpaceGame" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Script" expanded="True">
-                <Node name="enemyScript.cs" selected="True" />
+            <Node name="SpaceGame" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Script" expanded="True">
+                  <Node name="PlayerScript.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
