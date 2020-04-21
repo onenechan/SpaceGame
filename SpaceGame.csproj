@@ -261,6 +261,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\enemyGenerate.cs" />
     <Compile Include="Assets\Script\enemyScript.cs" />
+    <Compile Include="Assets\Script\FieldManagement.cs" />
     <Compile Include="Assets\Script\move_rocket.cs" />
     <Compile Include="Assets\Script\move_Scene.cs" />
     <Compile Include="Assets\Script\PlayerScript.cs" />

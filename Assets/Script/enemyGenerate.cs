@@ -6,7 +6,7 @@ public class enemyGenerate : MonoBehaviour {
 
     public GameObject enemy;
     float timer;
-    float interval = 3.0f;
+    float interval = 1.0f;
 	// Use this for initialization
 	void Start () {
 		

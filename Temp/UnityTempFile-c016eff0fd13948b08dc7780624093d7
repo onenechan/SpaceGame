@@ -166,8 +166,11 @@
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
 'Assets/Script/enemyGenerate.cs'
+'Assets/Script/enemyScript.cs'
+'Assets/Script/FieldManagement.cs'
 'Assets/Script/move_rocket.cs'
 'Assets/Script/move_Scene.cs'
+'Assets/Script/PlayerScript.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/UnityScript.dll'

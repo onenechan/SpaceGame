@@ -15,7 +15,7 @@ public class move_Scene : MonoBehaviour {
 		
 	}
     public void H2Abutton() {
-        SceneManager.LoadScene("game");
+        SceneManager.LoadScene("game_h2a");
     }
     public void EpsilonButton() {
         SceneManager.LoadScene("game_epsilon");
