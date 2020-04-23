@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{51A31724-13B1-5E8C-04A4-A6A8058BF904}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/FieldManagement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/PlayerScript.cs">
     <Files>
       <File FileName="Assets/Script/move_rocket.cs" Line="20" Column="74" />
-      <File FileName="Assets/Script/move_Scene.cs" />
-      <File FileName="Assets/Script/enemyGenerate.cs" />
-      <File FileName="Assets/Script/enemyScript.cs" />
-      <File FileName="Assets/Script/PlayerScript.cs" />
-      <File FileName="Assets/Script/FieldManagement.cs" Line="17" Column="1" />
+      <File FileName="Assets/Script/move_Scene.cs" Line="18" Column="41" />
+      <File FileName="Assets/Script/enemyGenerate.cs" Line="9" Column="26" />
+      <File FileName="Assets/Script/enemyScript.cs" Line="15" Column="18" />
+      <File FileName="Assets/Script/PlayerScript.cs" Line="35" Column="1" />
+      <File FileName="Assets/Script/FieldManagement.cs" Line="26" Column="10" />
+      <File FileName="Assets/Script/destroyScript.cs" Line="11" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

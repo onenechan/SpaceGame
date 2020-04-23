@@ -20,8 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4629571746987114}
   - component: {fileID: 212930450873494654}
-  - component: {fileID: 65160230733285806}
   - component: {fileID: 114337157142176220}
+  - component: {fileID: 50684973284539772}
+  - component: {fileID: 61331178135821316}
   m_Layer: 0
   m_Name: cloud2
   m_TagString: Untagged
@@ -42,18 +43,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &65160230733285806
-BoxCollider:
+--- !u!50 &50684973284539772
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1863251402568746}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &61331178135821316
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1863251402568746}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.84, y: 1.68}
+    newSize: {x: 3.84, y: 1.68}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2625315, y: 1.5175877, z: 0.2}
-  m_Center: {x: -0.07218325, y: -0.027069092, z: 0}
+  m_Size: {x: 3.84, y: 1.68}
+  m_EdgeRadius: 0
 --- !u!114 &114337157142176220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -98,7 +132,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 0affbaa7bcf6e479781aae808fa2c9a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
