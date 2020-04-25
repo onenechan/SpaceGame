@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class move_Scene : MonoBehaviour {
+public class TitleButtunScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
