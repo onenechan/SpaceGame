@@ -10,7 +10,9 @@ public class PlayerScript_e : MonoBehaviour
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
-    public GameObject heart4; //portion
+    public GameObject heart4;
+    public GameObject heart5;
+    public GameObject heart; //portion
 
 
     void Start()
@@ -44,29 +46,53 @@ public class PlayerScript_e : MonoBehaviour
             }
         }
 
+        if (playerHP == 5)
+        {
+            heart1.SetActive(true);
+            heart2.SetActive(true);
+            heart3.SetActive(true);
+            heart4.SetActive(true);
+            heart5.SetActive(true);
+        }
+        if (playerHP == 4)
+        {
+            heart1.SetActive(true);
+            heart2.SetActive(true);
+            heart3.SetActive(true);
+            heart4.SetActive(true);
+            heart5.SetActive(false);
+        }
         if (playerHP == 3)
         {
             heart1.SetActive(true);
             heart2.SetActive(true);
             heart3.SetActive(true);
+            heart4.SetActive(false);
+            heart5.SetActive(false);
         }
         else if (playerHP == 2)
         {
             heart1.SetActive(true);
             heart2.SetActive(true);
             heart3.SetActive(false);
+            heart4.SetActive(false);
+            heart5.SetActive(false);
         }
         else if (playerHP == 1)
         {
             heart1.SetActive(true);
             heart2.SetActive(false);
             heart3.SetActive(false);
+            heart4.SetActive(false);
+            heart5.SetActive(false);
         }
         else if (playerHP == 0)
         {
             heart1.SetActive(false);
             heart2.SetActive(false);
             heart3.SetActive(false);
+            heart4.SetActive(false);
+            heart5.SetActive(false);
         }
         Destroy(col.gameObject);
     }

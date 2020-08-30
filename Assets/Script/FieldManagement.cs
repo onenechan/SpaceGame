@@ -70,6 +70,7 @@ public class FieldManagement : MonoBehaviour {
 
 
     void Start () {
+        timer = 0;
         audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(bgm);
         H2Aanimator = player.GetComponent<Animator>();
@@ -201,7 +202,7 @@ public class FieldManagement : MonoBehaviour {
             conversation.text = "天気が危うい。気をつけろ！";
         }
         if (timer >= 9){
-            telop.text = "Mission";
+            telop.text = "MISSION!";
         }
         if(timer >= 11){
             conversation.text = "積乱雲を避けてくれ！ロケットは雷に弱いんだ";
@@ -216,11 +217,10 @@ public class FieldManagement : MonoBehaviour {
             telop.text = "";
         }
         if(timer >= 21){
-            target1.SetActive(false);
             enemy_generater1.SetActive(false);
             enemy_generater2.SetActive(false);
         }
-        if (timer >= 23) {
+        if (timer >= 24) {
             phase = Phase.STAGE1;
             timer = 0;
             flag = 0;
@@ -228,18 +228,23 @@ public class FieldManagement : MonoBehaviour {
     }
 
     public void STAGE1Phase(){
+        timer += Time.deltaTime;
         if (flag == 0) {
             conversation.text = "積乱雲を抜けたぞ！SRBを分離してくれ！";
-            telop.text = "スペースキーを押せ！";
+            target1.SetActive(false);
+            batsu.SetActive(false);
+            if (timer >= 1){
+                telop.text = "スペースキーを押せ！";
+            }
         }
         if (Input.GetKey(KeyCode.Space)&&flag == 0)
         {
             //TODO SRBの分離
             H2Aanimator.SetTrigger("srb");
             flag =　1;
+            timer = 0;
         }
         if (flag == 1) { 
-            timer += Time.deltaTime;
             if (timer >= 5)
             {
                 conversation.text = "よくやった！分離成功だ！！";
@@ -250,41 +255,57 @@ public class FieldManagement : MonoBehaviour {
             }
             if (timer >= 8){
                 conversation.text = "うまいじゃないか！上々だな。";
+                telop.text = "";
             }
             if (timer >= 11){
-                conversation.text = "待て...！何かふってくるぞ！隕石だ！";
+                conversation.text = "......！何かふってくるぞ！";
             }
-            if (timer >= 14) {
+            if (timer >= 14)
+            {
+                conversation.text = "い......隕石だ！";
+            }
+            if (timer >= 17) {
                 enemy_generater3.SetActive(true);
                 heart_generater.SetActive(true);
                 target2.SetActive(true);
+                batsu.SetActive(true);
                 phase = Phase.STAGE2;
                 timer = 0;
                 flag = 0;
                 conversation.text = "隕石を避けてくれ！ハートでHPを回復できるぞ！";
-                telop.text = "";
+                telop.text = "MISSION!";
             }
         }
     }
 
-    public void STAGE2Phase() {
+    public void STAGE2Phase()
+    {
         timer += Time.deltaTime;
-        if (timer >= 10) {
+        if (timer >= 3)
+        {
+            telop.text = "";
+        }
+        if (timer >= 10)
+        {
             enemy_generater3.SetActive(false);
             heart_generater.SetActive(false);
-            target2.SetActive(false);
         }
-        if (timer >= 13){
-            conversation.text = "間一髪だったな！";
+        if (timer >= 13)
+        {
+            conversation.text = "あぶなかったな！";
         }
-        if (timer >= 16){
-            conversation.text = "よし！フェアリングの分離だ！頼んだぞ！";
+        if (timer >= 16)
+        {
+            conversation.text = "気を取り直して、フェアリングの分離だ！頼んだぞ！";
             telop.text = "Fキーを押して切りはなそう！";
-            if (Input.GetKey(KeyCode.F) && flag == 0) {
+            target2.SetActive(false);
+            batsu.SetActive(false);
+            if (Input.GetKey(KeyCode.F) && flag == 0)
+            {
                 //TODO フェアリングの分離
                 H2Aanimator.SetTrigger("f");
                 flag = 1;
-            timer = 0;
+                timer = 0;
             }
         }
         if (timer >= 5 && flag == 1)
@@ -295,13 +316,21 @@ public class FieldManagement : MonoBehaviour {
             H2A_Fairing_L.SetActive(false);
             cam.backgroundColor = new Color(0.2f, 0.29f, 0.37f);
         }
-        if (timer >= 8 && flag == 1){
+        if (timer >= 8 && flag == 1)
+        {
             conversation.text = "おいおい！うそだろ......！";
+            telop.text = "";
         }
-        if (timer >= 11 && flag == 1){
+        if (timer >= 11 && flag == 1)
+        {
             target3.SetActive(true);
+            batsu.SetActive(true);
             enemy_generater4.SetActive(true);
+            heart_generater.SetActive(true);
             conversation.text = "UFOだ！よけろ！よけてくれ！！";
+            telop.text = "MISSION!";
+        }
+        if (timer >= 13 && flag == 1){
             telop.text = "";
             phase = Phase.STAGE3;
             timer = 0;
@@ -314,12 +343,14 @@ public class FieldManagement : MonoBehaviour {
         timer += Time.deltaTime;
         if (timer >= 10)
         {
-            target3.SetActive(false);
-            enemy_generater4.SetActive(false);
             conversation.text = "もちこたえてくれ！";
+            enemy_generater4.SetActive(false);
+            heart_generater.SetActive(false);
         }
-        if(timer>= 13){
+        if (timer>= 13){
             conversation.text = "なんとか無事だな、よかったよ。たいした奴だ。";
+            target3.SetActive(false);
+            batsu.SetActive(false);
         }
         if(timer >= 16) { 
             conversation.text = "【ＭＥＣＯ】メインエンジンカットオフ！よろしく頼む！";
@@ -381,6 +412,4 @@ public class FieldManagement : MonoBehaviour {
         timer = 0;
         introduction.SetActive(false);
     }
-
-
 }

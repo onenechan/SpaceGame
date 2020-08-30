@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "SpaceGame",
+"dataUrl": "Ver_a.data.unityweb",
+"asmCodeUrl": "Ver_a.asm.code.unityweb",
+"asmMemoryUrl": "Ver_a.asm.memory.unityweb",
+"asmFrameworkUrl": "Ver_a.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

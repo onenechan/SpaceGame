@@ -70,6 +70,7 @@ public class FieldManagement_e : MonoBehaviour
         /*audioSource = GetComponent<AudioSource>();
         audioSource.PlayOneShot(bgm);
         H2Aanimator = player.GetComponent<Animator>();*/
+        timer = 0;
         luncher = GameObject.Find("lunchers");
         luncher_rb = luncher.GetComponent<Rigidbody2D>();
         cam = maincamera.GetComponent<Camera>();

@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{51A31724-13B1-5E8C-04A4-A6A8058BF904}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/FieldManagement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/MoonFaildScript.cs">
     <Files>
       <File FileName="Assets/Script/enemyGenerate.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/enemyScript.cs" />
-      <File FileName="Assets/Script/PlayerScript.cs" />
-      <File FileName="Assets/Script/FieldManagement.cs" Line="206" Column="25" />
+      <File FileName="Assets/Script/enemyScript.cs" Line="7" Column="27" />
+      <File FileName="Assets/Script/PlayerScript.cs" Line="39" Column="28" />
+      <File FileName="Assets/Script/FieldManagement.cs" Line="38" Column="23" />
       <File FileName="Assets/Script/destroyScript.cs" />
       <File FileName="Assets/Script/HeartScript.cs" />
-      <File FileName="Assets/Script/MoonScript.cs" />
+      <File FileName="Assets/Script/MoonScript.cs" Line="8" Column="6" />
       <File FileName="Assets/Script/TitleRocketScript.cs" />
-      <File FileName="Assets/Script/PlayerScript_e.cs" />
+      <File FileName="Assets/Script/PlayerScript_e.cs" Line="13" Column="1" />
+      <File FileName="Assets/Script/FieldManagement_e.cs" Line="114" Column="23" />
+      <File FileName="Assets/Script/clear1Script.cs" Line="24" Column="23" />
+      <File FileName="Assets/Script/MoonFaildScript.cs" Line="5" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +23,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SpaceGame PreferredExecutionTarget="a31e4858-c5e3-4773-8010-dcb079f7e69c" />
+  <MonoDevelop.Ide.ItemProperties.SpaceGame PreferredExecutionTarget="b24f1bfa-0c3a-42e3-b6df-6d3aebd6c2bd" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
