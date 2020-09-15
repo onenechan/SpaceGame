@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class TitleButtunScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public AudioClip se1;
+    AudioSource audioSource;
+
+    // Use this for initialization
+    void Start () {
+        audioSource = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -16,8 +19,10 @@ public class TitleButtunScript : MonoBehaviour {
 	}
     public void H2Abutton() {
         SceneManager.LoadScene("game_h2a");
+        audioSource.PlayOneShot(se1);
     }
     public void EpsilonButton() {
         SceneManager.LoadScene("game_epsilon");
+        audioSource.PlayOneShot(se1);
     }
 }

@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{51A31724-13B1-5E8C-04A4-A6A8058BF904}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/MoonFaildScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/TitleButtunScript.cs">
     <Files>
       <File FileName="Assets/Script/enemyGenerate.cs" Line="1" Column="1" />
-      <File FileName="Assets/Script/enemyScript.cs" Line="7" Column="27" />
-      <File FileName="Assets/Script/PlayerScript.cs" Line="39" Column="28" />
-      <File FileName="Assets/Script/FieldManagement.cs" Line="247" Column="26" />
-      <File FileName="Assets/Script/destroyScript.cs" Line="3" Column="19" />
-      <File FileName="Assets/Script/HeartScript.cs" Line="15" Column="6" />
-      <File FileName="Assets/Script/MoonScript.cs" Line="8" Column="6" />
+      <File FileName="Assets/Script/enemyScript.cs" />
+      <File FileName="Assets/Script/PlayerScript.cs" />
+      <File FileName="Assets/Script/FieldManagement.cs" />
+      <File FileName="Assets/Script/destroyScript.cs" />
+      <File FileName="Assets/Script/HeartScript.cs" />
+      <File FileName="Assets/Script/MoonScript.cs" />
       <File FileName="Assets/Script/TitleRocketScript.cs" />
-      <File FileName="Assets/Script/PlayerScript_e.cs" Line="9" Column="24" />
-      <File FileName="Assets/Script/FieldManagement_e.cs" Line="11" Column="30" />
-      <File FileName="Assets/Script/clear1Script.cs" Line="24" Column="23" />
-      <File FileName="Assets/Script/MoonFaildScript.cs" Line="10" Column="45" />
+      <File FileName="Assets/Script/PlayerScript_e.cs" />
+      <File FileName="Assets/Script/FieldManagement_e.cs" />
+      <File FileName="Assets/Script/clear1Script.cs" />
+      <File FileName="Assets/Script/MoonFaildScript.cs" />
+      <File FileName="Assets/Script/TitleButtunScript.cs" Line="8" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +24,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.SpaceGame PreferredExecutionTarget="b24f1bfa-0c3a-42e3-b6df-6d3aebd6c2bd" />
+  <MonoDevelop.Ide.ItemProperties.SpaceGame PreferredExecutionTarget="f3316046-f144-42a1-a9bd-12b92e771839" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
